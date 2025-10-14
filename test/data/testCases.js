@@ -6,7 +6,8 @@ export default [
         interests: ["health","business","science"],
         subjects: ["freshInsightsAndKnowledge", "aSenseOfHope"],
         menus: ["podcasts"]
-    },
+    }
+    ,
     {
         description: "Select nature, activism and humanity interest",
         interests: ["nature","activism","humanity"],

@@ -1,7 +1,4 @@
 import { $ } from '@wdio/globals'
-
-
-
 class LandingPage {
 
     get btnLetsGo () {
@@ -19,7 +16,6 @@ class LandingPage {
     get splash () {
         return $('//android.view.ViewGroup[@resource-id="SplashScreen"]/android.widget.ImageView');
     }
-  
 
 }
 

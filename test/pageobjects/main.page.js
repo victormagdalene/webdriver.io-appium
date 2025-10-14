@@ -2,7 +2,6 @@ import { $ } from '@wdio/globals'
 
 class MainPage {
 
-
     get btnHome() {
         return $('//android.view.View[@resource-id="BottomTab_Home"]');
     }
@@ -30,8 +29,6 @@ class MainPage {
     }
 
 }
-
-
 
 export default new MainPage();
 

@@ -2,7 +2,6 @@ import { $ } from '@wdio/globals'
 
 class InterestsPage {
 
-
     get btnTechnology() {
         return $('//android.widget.TextView[@resource-id="Typography" and @text="Technology"]');
     }
@@ -88,10 +87,7 @@ class InterestsPage {
         };
         return interestMap[interest];
     }
-
     
 }
-
-
 
 export default new InterestsPage();

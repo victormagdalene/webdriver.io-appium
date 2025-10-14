@@ -59,6 +59,4 @@ class LookingForPage {
 
 }
 
-
-
 export default new LookingForPage();
