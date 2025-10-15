@@ -54,11 +54,16 @@ export const config = {
     capabilities: [{
         // capabilities for local Appium web tests on an Android Emulator
         platformName: 'Android',
-        'appium:deviceName': 'Medium Phone API 36.0',
-        'appium:platformVersion': '16.0',
+        'appium:deviceName': 'emulator-5554',
+        'appium:platformVersion': '11.0',
         'appium:automationName': 'UiAutomator2',
-        'appium:app': path.join(process.cwd(),'./app/app.apk')
+        'appium:app': path.join(process.cwd(), './app/app.apk'),
+        'appium:autoGrantPermissions': true
     }],
+
+    hostname: 'localhost',
+    port: 4723,
+    path: '/wd/hub',
 
     //
     // ===================
@@ -116,7 +121,7 @@ export const config = {
     // Make sure you have the wdio adapter package for the specific framework installed
     // before running any tests.
     framework: 'mocha',
-    
+
     //
     // The number of times to retry the entire specfile when it fails as a whole
     // specFileRetries: 1,
@@ -130,7 +135,7 @@ export const config = {
     // Test reporter for stdout.
     // The only one supported by default is 'dot'
     // see also: https://webdriver.io/docs/dot-reporter
-    reporters: ['spec','junit'],
+    reporters: ['spec', 'junit'],
 
     // Options to be passed to Mocha.
     // See the full list at http://mochajs.org/

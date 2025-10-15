@@ -1,5 +1,5 @@
 {
-  "name": "webdriver.io-TED",
+  "name": "webdriver.io-appium",
   "type": "module",
   "devDependencies": {
     "@wdio/appium-service": "^9.20.0",
@@ -11,6 +11,8 @@
     "appium-uiautomator2-driver": "^5.0.5"
   },
   "scripts": {
-    "wdio": "wdio run ./wdio.conf.js"
+    "wdio": "wdio run ./wdio.conf.js",
+    "appium:start": "appium --log-level error",
+    "test:android": "wdio run wdio.android.conf.js"
   }
 }
