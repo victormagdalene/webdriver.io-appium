@@ -12,10 +12,6 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 35
 
-    env:
-      ANDROID_HOME: ${{ env.ANDROID_HOME }}
-      PATH: ${{ env.ANDROID_HOME }}/emulator:${{ env.ANDROID_HOME }}/tools:${{ env.ANDROID_HOME }}/tools/bin:${{ env.ANDROID_HOME }}/platform-tools:${{ env.PATH }}
-
     steps:
       - name: Checkout código
         uses: actions/checkout@v4
